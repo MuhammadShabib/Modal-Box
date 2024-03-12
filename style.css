@@ -1,14 +1,57 @@
 body {
-    height: 100ch;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    /* background-color: ; */
+    font-family: sans-serif;
 }
 
-div {
+#open {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 100, 100);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
     display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#modal-content {
+    display: none;
+    z-index: 4;
     width: 200px;
-    height: 200px;
+    height: 100px;
+    background-color: #f58f8f;
+}
+
+.header {
     background-color: #fff;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.header button {
+    padding: 2px 4px;
+    border: none;
+    background-color: red;
+    color: #fff;
+}
+
+.modal-body {
+    text-align: center;
+    color: white;
 }
