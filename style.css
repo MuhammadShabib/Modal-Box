@@ -1,0 +1,14 @@
+body {
+    height: 100ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+div {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
